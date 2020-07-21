@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Ítalo Silveira",
+      "authorEmail": "italobrian@gmail.com",
+      "authorUrl": "https://github.com/isilveira"
+    }
+  }
+}
