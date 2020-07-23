@@ -16,10 +16,59 @@ module.exports = class extends Generator {
 
     const prompts = [
       {
-        type: "confirm",
-        name: "someAnswer",
-        message: "Would you like to enable this option?",
-        default: true
+        type: "list",
+        name: "project",
+        message: "Select project type:",
+        choices: [
+          {
+            name: "DDD - FullLIB",
+            value: "DDDFLIB"
+          },
+          {
+            name: "DDD - FullAPP",
+            value: "DDDFAPP"
+          },
+          {
+            name: "DDD - FullAPI",
+            value: "DDDFAPI"
+          },
+          {
+            name: "DDD - LiteLIB",
+            value: "DDDFLIB"
+          },
+          {
+            name: "DDD - LiteAPP",
+            value: "DDDFAPP"
+          },
+          {
+            name: "DDD - LiteAPI",
+            value: "DDDFAPI"
+          },
+          {
+            name: "CQRS - FullLIB",
+            value: "CQRSFLIB"
+          },
+          {
+            name: "CQRS - FullAPP",
+            value: "CQRSFAPP"
+          },
+          {
+            name: "CQRS - FullAPI",
+            value: "CQRSFAPI"
+          },
+          {
+            name: "CQRS - LiteLIB",
+            value: "CQRSLLIB"
+          },
+          {
+            name: "CQRS - LiteAPP",
+            value: "CQRSLAPP"
+          },
+          {
+            name: "CQRS - LiteAPI",
+            value: "CQRSLAPI"
+          }
+        ]
       }
     ];
 
@@ -30,6 +79,8 @@ module.exports = class extends Generator {
   }
 
   writing() {
+    this.log("Project: ", this.props.project);
+
     this.fs.copy(
       this.templatePath("dummyfile.txt"),
       this.destinationPath("dummyfile.txt")
