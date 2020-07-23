@@ -1,6 +1,6 @@
 {
   "name": "generator-bs-dotnetcore",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "BAYSFOT - Yeoman based code generator for dotnet core projects",
   "homepage": "https://github.com/BAYSOFT-001/generator-bs-dotnetcore",
   "author": {
