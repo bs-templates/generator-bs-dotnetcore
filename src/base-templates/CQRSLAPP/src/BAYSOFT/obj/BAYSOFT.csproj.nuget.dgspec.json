@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT\\BAYSOFT.csproj": {}
+    "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT.csproj": {}
   },
   "projects": {
-    "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT\\BAYSOFT.csproj": {
+    "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT\\BAYSOFT.csproj",
+        "projectUniqueName": "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT.csproj",
         "projectName": "BAYSOFT",
-        "projectPath": "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT\\BAYSOFT.csproj",
+        "projectPath": "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT.csproj",
         "packagesPath": "C:\\Users\\italo\\.nuget\\packages\\",
-        "outputPath": "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT\\obj\\",
+        "outputPath": "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

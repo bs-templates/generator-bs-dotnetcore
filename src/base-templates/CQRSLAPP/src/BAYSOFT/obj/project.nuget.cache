@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W7OIy1DGe4AO8JcAeCMPwyZiEa02Jw4IXhCXsn7OyXOK5PoEJ1bDyq8sGWDgtnovE+5a+kNDeUrfSKzN1K66VQ==",
+  "dgSpecHash": "C9oTlLZXwmHu9H1xPFHGX6gh1JivHZsKqyqIYChE7F9IeUru3Z80zwRXd+8G2ywo27D8kOEzehP5DcbT3L07Vg==",
   "success": true,
-  "projectFilePath": "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT\\BAYSOFT.csproj",
+  "projectFilePath": "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\italo\\.nuget\\packages\\mediatr\\8.0.2\\mediatr.8.0.2.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.1\\mediatr.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
