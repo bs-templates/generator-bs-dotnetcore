@@ -1,4 +1,9 @@
 ﻿using BAYSOFT.Core.Domain.Interfaces.Infrastructures.Data.Contexts;
+using BAYSOFT.Core.Domain.Interfaces.Services.Default.Samples;
+using BAYSOFT.Core.Domain.Services.Default.Samples;
+using BAYSOFT.Core.Domain.Validations.DomainValidations.Default.Samples;
+using BAYSOFT.Core.Domain.Validations.EntityValidations.Default;
+using BAYSOFT.Core.Domain.Validations.Specifications.Default.Samples;
 using BAYSOFT.Core.Infrastructures.Data.Contexts;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -19,6 +24,17 @@ namespace BAYSOFT.Core.Middleware
                 options.UseSqlServer(
                     configuration.GetConnectionString("DefaultConnection"),
                     sql => sql.MigrationsAssembly(presentationAssembly.GetName().Name)));
+            
+            services.AddDbContext<IDefaultDbContextQuery, DefaultDbContext>(options =>
+                options.UseSqlServer(
+                    configuration.GetConnectionString("DefaultConnection"),
+                    sql => sql.MigrationsAssembly(presentationAssembly.GetName().Name)));
+
+            services.AddTransient<SampleValidator>();
+            services.AddTransient<PostSampleSpecificationsValidator>();
+            services.AddTransient<SampleDescriptionAlreadyExistsSpecification>();
+
+            services.AddTransient<IPostSampleService, PostSampleService>();
 
             var assembly = AppDomain.CurrentDomain.Load("BAYSOFT");
 

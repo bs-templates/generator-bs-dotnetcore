@@ -164,6 +164,7 @@ C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\BAYSOFT.pdb
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\BAYSOFT.Views.dll
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\BAYSOFT.Views.pdb
+C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\FluentValidation.dll
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\MediatR.dll
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
@@ -203,6 +204,7 @@ C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\ModelWrapper.dll
+C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\NetDevPack.dll
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
@@ -275,7 +277,6 @@ C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\obj\Debug\netcoreapp3.1\BAYSOFT.csprojAssemblyReference.cache
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\obj\Debug\netcoreapp3.1\BAYSOFT.AssemblyInfoInputs.cache
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\obj\Debug\netcoreapp3.1\BAYSOFT.AssemblyInfo.cs
 C:\Projetos\GitHub\isilveira\generator-bs-dotnetcore\src\base-templates\CQRSLAPP\src\BAYSOFT\obj\Debug\netcoreapp3.1\BAYSOFT.csproj.CoreCompileInputs.cache

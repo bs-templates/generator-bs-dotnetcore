@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[9.0.1, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -70,6 +74,10 @@
             "ModelWrapper": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "NetDevPack": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             }
           },
           "imports": [

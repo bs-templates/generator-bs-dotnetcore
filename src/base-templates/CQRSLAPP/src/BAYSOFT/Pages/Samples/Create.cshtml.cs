@@ -1,6 +1,9 @@
 ﻿using BAYSOFT.Core.Application.Default.Samples.Commands.PostSample;
 using BAYSOFT.Infrastructures.Crosscutting;
+using BAYSOFT.Infrastructures.Exceptions;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
@@ -21,24 +24,43 @@ namespace BAYSOFT.Pages.Samples
 
         public async Task<ActionResult> OnPost()
         {
-            if (!ModelState.IsValid)
+            try
             {
+                if (!ModelState.IsValid)
+                {
+                    return Page();
+                }
+
+                var command = new PostSampleCommand();
+
+                command.Project(x => x.Description = Input.Description);
+
+                var response = await Mediator.Send(command);
+
+                if (response.StatusCode != 200)
+                {
+                    throw new BusinessException(response.Message);
+                }
+
+                return RedirectToPage("./Index");
+            }
+            catch(BusinessException bex)
+            {
+                ModelState.AddModelError("", bex.Message);
+                if (bex.InnerExceptions != null && bex.InnerExceptions.Count > 0)
+                {
+                    foreach(var innerException in bex.InnerExceptions)
+                    {
+                        ModelState.AddModelError("", innerException.Message);
+                    }
+                }
                 return Page();
             }
-
-            var command = new PostSampleCommand();
-
-            command.Project(x => x.Description = Input.Description);
-
-            var response = await Mediator.Send(command);
-
-            if (response.StatusCode != 200)
+            catch (Exception ex)
             {
-                ModelState.AddModelError("", response.Message);
+                ModelState.AddModelError("", ex.Message);
                 return Page();
             }
-
-            return RedirectToPage("./Index");
         }
 
         public class InputModel

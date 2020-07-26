@@ -1,23 +1,29 @@
-using MediatR;
-using ModelWrapper.Extensions.Post;
+using BAYSOFT.Core.Domain.Entities.Default;
 using BAYSOFT.Core.Domain.Interfaces.Infrastructures.Data.Contexts;
+using BAYSOFT.Core.Domain.Interfaces.Services.Default.Samples;
+using ModelWrapper.Extensions.Post;
 using System.Threading;
 using System.Threading.Tasks;
 
 namespace BAYSOFT.Core.Application.Default.Samples.Commands.PostSample
 {
-    public class PostSampleCommandHandler : IRequestHandler<PostSampleCommand, PostSampleCommandResponse>
+    public class PostSampleCommandHandler : ApplicationRequestHandler<Sample, PostSampleCommand, PostSampleCommandResponse>
     {
-        public IDefaultDbContext Context { get; set; }
-        public PostSampleCommandHandler(IDefaultDbContext context)
+        private IDefaultDbContext Context { get; set; }
+        private IPostSampleService PostService { get; set; }
+        public PostSampleCommandHandler(
+            IDefaultDbContext context,
+            IPostSampleService postService
+        )
         {
             Context = context;
+            PostService = postService;
         }
-        public async Task<PostSampleCommandResponse> Handle(PostSampleCommand request, CancellationToken cancellationToken)
+        public override async Task<PostSampleCommandResponse> Handle(PostSampleCommand request, CancellationToken cancellationToken)
         {
             var data = request.Post();
-            
-            await Context.Samples.AddAsync(data);
+
+            await PostService.Run(data);
 
             await Context.SaveChangesAsync();
 

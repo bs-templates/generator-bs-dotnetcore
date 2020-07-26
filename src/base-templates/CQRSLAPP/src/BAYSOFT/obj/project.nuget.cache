@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "C9oTlLZXwmHu9H1xPFHGX6gh1JivHZsKqyqIYChE7F9IeUru3Z80zwRXd+8G2ywo27D8kOEzehP5DcbT3L07Vg==",
+  "dgSpecHash": "TJ8pGqZB8kkvohn2zIO6hCO3Wye/E2NCIbflfEAhP3rPuqlAJx3KvXwaZ6hEe+1aZVaJHnx6Dkj/Wrec6cAl2g==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\GitHub\\isilveira\\generator-bs-dotnetcore\\src\\base-templates\\CQRSLAPP\\src\\BAYSOFT\\BAYSOFT.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\italo\\.nuget\\packages\\fluentvalidation\\9.0.1\\fluentvalidation.9.0.1.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\mediatr\\8.0.2\\mediatr.8.0.2.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\8.0.1\\mediatr.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
@@ -73,6 +74,7 @@
     "C:\\Users\\italo\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\modelwrapper\\2.1.0\\modelwrapper.2.1.0.nupkg.sha512",
+    "C:\\Users\\italo\\.nuget\\packages\\netdevpack\\1.1.0\\netdevpack.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\italo\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",

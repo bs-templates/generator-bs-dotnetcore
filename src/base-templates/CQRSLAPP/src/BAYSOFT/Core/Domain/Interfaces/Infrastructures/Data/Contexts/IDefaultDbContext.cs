@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace BAYSOFT.Core.Domain.Interfaces.Infrastructures.Data.Contexts
 {
-    public interface IDefaultDbContext
+    public interface IDefaultDbContext : IDefaultDbContextQuery
     {
-        public DbSet<Sample> Samples { get; set; }
         public int SaveChanges(bool acceptAllChangesOnSuccess);
         public int SaveChanges();
         public Task<int> SaveChangesAsync(bool acceptAllChangesOnSuccess, CancellationToken cancellationToken = default);

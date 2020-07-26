@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "FluentValidation/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
       "MediatR/8.0.2": {
         "type": "package",
         "compile": {
@@ -1080,6 +1089,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/ModelWrapper.dll": {}
+        }
+      },
+      "NetDevPack/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "FluentValidation": "8.6.2",
+          "mediatr": "8.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetDevPack.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetDevPack.dll": {}
         }
       },
       "NETStandard.Library/1.6.1": {
@@ -2864,6 +2886,21 @@
     }
   },
   "libraries": {
+    "FluentValidation/9.0.1": {
+      "sha512": "GeF+cPknUFFJ5FkCybmQShaXWwJowBuJozgns6In37wiP2zOWx+kdNPBAN9BlDyhcORdxtXeGnkLZ+OFT85onQ==",
+      "type": "package",
+      "path": "fluentvalidation/9.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.9.0.1.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net461/FluentValidation.dll",
+        "lib/net461/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
+      ]
+    },
     "MediatR/8.0.2": {
       "sha512": "6mexVNDRj2T/z0OkxO5H5HPKowTP1iyToCACV/bZ/mU1X4MbzcBlqqQwGF40k+rfi+1ePcTYzSZLsFp2zM4e7g==",
       "type": "package",
@@ -4438,6 +4475,19 @@
         "lib/netstandard2.0/ModelWrapper.dll",
         "modelwrapper.2.1.0.nupkg.sha512",
         "modelwrapper.nuspec"
+      ]
+    },
+    "NetDevPack/1.1.0": {
+      "sha512": "pEeSxtDUKHC1mNwFHikn2WuArzgKYIQ/MLto5xrEKAZGc5MBUuTmFHeRtlwbm2dyU5RvT0Xe/chwRJt0ezN7bg==",
+      "type": "package",
+      "path": "netdevpack/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "IconNuget.png",
+        "lib/netstandard2.0/NetDevPack.dll",
+        "netdevpack.1.1.0.nupkg.sha512",
+        "netdevpack.nuspec"
       ]
     },
     "NETStandard.Library/1.6.1": {
@@ -8934,13 +8984,15 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "FluentValidation >= 9.0.1",
       "MediatR >= 8.0.2",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 8.0.1",
       "Microsoft.EntityFrameworkCore >= 3.1.6",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.6",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.6",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3",
-      "ModelWrapper >= 2.1.0"
+      "ModelWrapper >= 2.1.0",
+      "NetDevPack >= 1.1.0"
     ]
   },
   "packageFolders": {
@@ -8984,6 +9036,10 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[9.0.1, )"
+          },
           "MediatR": {
             "target": "Package",
             "version": "[8.0.2, )"
@@ -9013,6 +9069,10 @@
           "ModelWrapper": {
             "target": "Package",
             "version": "[2.1.0, )"
+          },
+          "NetDevPack": {
+            "target": "Package",
+            "version": "[1.1.0, )"
           }
         },
         "imports": [
